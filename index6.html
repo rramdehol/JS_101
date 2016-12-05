@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	function whatToDo(){
+		var dayOfTheWeek = new Date().getDay();
+		// var dayOfTheWeek = 6
+		console.log(dayOfTheWeek);
+		if((dayOfTheWeek<6)&&(dayOfTheWeek>0)){
+			console.log("Go To Work");
+		}
+		else if (dayOfTheWeek>=6){
+			dayOfTheWeek = 6;
+			console.log("Sleep In");
+		}
+	}
+	whatToDo();
+</script>

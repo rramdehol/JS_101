@@ -1,0 +1,41 @@
+<script type="text/javascript">
+	function whatToDo(){
+		var dayOfTheWeek = new Date().getDay();
+		// var dayOfTheWeek = 6
+		console.log(dayOfTheWeek);
+		if((dayOfTheWeek<6)&&(dayOfTheWeek>0)){
+			console.log("Go To Work");
+		}
+		else if (dayOfTheWeek>=6){
+			dayOfTheWeek = 6;
+			console.log("Sleep In");
+		}
+	}
+	whatToDo();
+
+	function numberOfDaysThatMonth(month, year){
+		var days = ""
+		if((year%4 === 0)&&(month ===2)){
+			days = 29 
+			console.log(days);
+		}
+		else if((year%4 !== 0)&&(month ===2)){
+			days = 28 
+			console.log(days);
+		}
+		else if((month ==4)||(month ==7)||(month ==11)||(month ==9)){
+			days = 30;
+			console.log(days);
+		}
+		else if((month ==1)||(month ==3)||(month ==5)||(month ==7)(month ==8)||(month ==10)||(month ==12)){
+			days = 31;
+			console.log(days);
+		}
+	}
+	numberOfDaysThatMonth(2,1993);
+
+	function howMuchToTip(amount, levelOfService){
+		
+	}
+
+</script>

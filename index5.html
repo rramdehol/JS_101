@@ -1,0 +1,34 @@
+<script type="text/javascript">
+	var novClass = ["Kyle","David","Ryan","Anna"];
+	var userInput = prompt("Please enter a name!");
+	console.log(userInput);
+	// var counter = 0;
+	var found = false 
+	
+	for(var i=0;i<novClass.length;i++){
+		if(novClass[i] === userInput){
+			found = true;
+			break;
+		}
+	}
+		
+	if(found){
+		console.log("You're in the class");
+	}
+	else{
+		console.log("You're Not There!");
+		var seatNumber = prompt("Enter Your Seat Number");
+		novClass.splice(parseInt(seatNumber-1),0,userInput)
+		console.log(novClass);
+	}
+	
+	// var novClass = ["Kyle","David","Ryan","Anna"];
+	// var userInput = prompt("Please enter a name!");
+	// console.log(userInput);
+	// var counter = 0;
+	// while((novClass[counter] === userInput) && (counter < novClass.length)){
+	// 	console.log("You're in the class");
+	// 	counter ++;
+	// }
+
+</script>

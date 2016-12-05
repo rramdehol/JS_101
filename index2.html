@@ -1,32 +1,29 @@
 <script type="text/javascript">
 	var response = prompt("Please enter a number between 1-10");
 	var randomNumber = Math.ceil((Math.random()*10));
-	// console.log(response);
+	console.log(response);
 	console.log(randomNumber);
 	var numberCheck = isNaN(response);
 	var counter = 0;
 
 	while((numberCheck)&&(counter === 0)){
 		var response = prompt("Please enter a number between 1-10");
-		if (!numberCheck){
+	}
+	if (response === randomNumber){
+	console.log("Congratulations You Won!");
+	counter ++;
+	}
+	else if(response !== randomNumber){
+		console.log("Sorry the number was actually, "+randomNumber);
+		if((Math.abs(response-randomNumber)<=2)){
+			console.log( "You were close!");
 			counter ++;
-			response = response;
 		}
-		if (response === randomNumber){
-		console.log("Congratulations You Won!");
-		counter ++;
+		else if((Math.abs(response-randomNumber)>=2)){
+			console.log( "You are stupid!");
+			counter ++;
 		}
-		else if(response !== randomNumber){
-			console.log("Sorry the number was actually, "+randomNumber);
-			if((Math.abs(response-randomNumber)<=2)){
-				console.log( "You were close!");
-				counter ++;
-			}
-			else if((Math.abs(response-randomNumber)>=2)){
-				console.log( "You are stupid!");
-				counter ++;
-			}
-		}	
+	}	
 	}
 	
 </script>

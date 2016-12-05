@@ -1,4 +1,141 @@
 <script type="text/javascript">
 // Printing Stuff
-window.alert("Hello World")
+// window.alert("Hello World")
+// alert("Hello","World");
+// alert("Hello, 2")
+// The DOM stands for the document object model(DOM)
+console.log("Hello, World")
+console.dir("Hello, World")
+document.write("Hello, World")
+// window.document.write("Hello, World")
+// A dot followed by parenthesis () is a METHOD! (or function)
+// A dot not followed by () is a PROPERTY!
+
+	// Variables- string/letters, number, or any other stuff that you can make with a keyboard. A variable is just a fast way to refer to something non fast.
+
+	// Data-Types 
+	// -strings - English-type-stuff.
+	// -Numbers- something with digits and the stuff that goes with them (-,.)
+	// -Booleans - True or Flase. 1 or 0. On or Off 
+	// -Arrays- List 
+	// -Objects- variable or variables
+
+	// Strings "" OR ''
+	// 1.var is a declaration of a variable 
+	// 2. Is the name of the variable that can be referenced from tis point on
+
+	var fullName = "Ryan Ramdehol";//Declaration
+	fullName = "Ryan 2"//Assignment
+	// Using the slashes for REGEX
+	fullName = "Ryan \"THE MAN\" Ramdehol"
+	fullName = 'Joe O\'Malley'
+
+	// Number
+	var myAge =38; //Integer
+	var myAge =38.25; //Float
+	var myAgeAsAString = "38";
+	
+	// OPERATORS
+	document.write(myage+1);
+	console.log(myAgeAsAString+1);
+	var doubleMyAge = 2*myAge;
+	var halfMyAge = myAge2
+	var floatNumber = 3.14;
+	console.log(typeof(floatNumber));
+	var makeMeAnInteger = parseInt(floatNumber);
+	console.log(makeMeAnInteger);
+
+	// Boolean
+	var theTruth = true;
+	theTruth = 1;
+	var theFalse = false;
+	theFalse = 0;
+
+	// Moduls
+	var amIEven= 10%2;
+	console.log(amIEven);
+	amIEven = 11%2;
+	console.log(amIEven);
+
+	var addOneToMe = 1;
+	addOneToMe++;
+	addOneToMe--;
+	addOneToMe+=10;
+	addOneToMe-=10;
+
+	// Prefix
+	// If you want your operation to happen ASAP, put the ++ at the beginning.Basically a POSTfix.
+	myAge =38;
+	console.log(myAge++);
+	console.log(++myAge);
+
+	// Order of Operations 
+	() Overides All
+	* and / ALWAYS Come first, then left ot right 
+	+ and - ALWAYS Come second,then left to right
+	var aClassicLine = "The Meaning of life is"+42;
+	aClassicLine = "The Meaning of life is"+4+2;
+	aClassicLine = "The Meaning of life is"+40+2;
+	aClassicLine = "The Meaning of life is"+(40+2);
+	console.log(aClassicLine);
+
+	// Prompts
+	// Take 2 Arguments, the first is the message to display in the prompt. 
+	// The second is the default (this one is optional)
+	var getUserName = prompt("What is your name", "Jim");
+	console.log(getUserName);
+	// JS prompts are annoying dont use them
+	// They are limited in scope to the page you are on. The second you leave the pag, the information is list
+
+	// Conditionals
+	var classSize = 16;
+	var question = "How big is your coding class"
+	var response = prompt(question,classSize);
+	===, same as ==, but it checks to see if all data types are equal as well 
+	==, is the way to compare left to right 
+	!=, is the way to compre if left and right are not equal
+	// if statement
+	if(contional is true){
+		RUN THIS CODE!
+	}
+
+	// if-else statement
+	if(response === 16){
+		console.log("You are in the November class");
+	}
+	else{
+		console.log("You are not in the November class");	
+	}
+
+	if(Number(response)===16){
+		console.log("5 Rows or 4");
+	}
+	
+	var whatAmI = Number("Digital Crafts");
+	console.log(whatAmI);
+
+	if(typeOf(whatAmI) === "number"){
+		console.log("You're a Number!")
+	}
+	// A method to check if its not a number
+	isNaN(variable);
+
+	// if-elseif-else
+	if(response === 16){
+		console.log("You are in the November class");
+	}
+	else-if(response === 15){
+		console.log("You are in the July class");
+	}
+	else{
+		console.log("You are not in the November class");	
+	}
+
+	response == 16 ? console.log("You are in the November class"):console.log("You are in the July class");
+
+	// RANDOM
+	var randomNumber = Math.random();
+	var randomNumber = Math.floor((Math.random()*10)+1);
+
+
 </script>
